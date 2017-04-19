@@ -1,0 +1,579 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body,
+html {
+  height: 100%;
+}
+
+body{
+  font-family: 'Lato', sans-serif;
+  padding-right: 0 !important ;
+}
+
+input[type="file"]{
+    display:none;
+}
+
+/*=============================DASHBOARD===============================*/
+.wrapper .sidebar {
+  width: 268px;
+  background: #fff;
+  position: fixed;
+  top:0;
+  left:0;
+  bottom:0;
+  height: 100%;
+  border-right: 1px solid rgba(185, 189, 197, 0.3);
+  padding: 30px 0px;
+}
+.wrapper .sidebar .logo {
+  padding: 20px;
+  text-align: center;
+}
+.wrapper .sidebar ul.nav {
+  margin-top: 20px;
+}
+.wrapper .sidebar ul.nav li a {
+     padding: 18px 48px;
+    border-radius: 0px;
+    height: 54px;
+    color: #53565b;
+    font-weight: bold;
+    font-size: 15px;
+}
+.wrapper .sidebar ul.nav li.active a strong {
+  background: #70eaa3;
+	color: #fff;
+}
+
+.wrapper .sidebar ul.nav li.active a{
+  background: #70eaa3;
+	color: #fff;
+}
+
+.wrapper .sidebar ul.nav li strong {
+  background: #3d9ae7;
+	color: #fff;
+}
+
+.wrapper main {
+  float: left;
+  width: 100%;
+  padding-left: 268px;
+}
+.wrapper main header {
+  background: #f5f5f5;
+  height: 68px;
+  float: left;
+  width: 100%;
+}
+.wrapper main header .block {
+  float: right;
+  width: 170px;
+  padding: 24px 45px;
+  background: #ededed;
+}
+.wrapper main header .block a {
+  font-size: 14px;
+  color:#3d9ae7;
+}
+.wrapper main header .block a span {
+  margin-left: 10px;
+}
+.wrapper main header p {
+  float: right;
+  padding: 5px 20px;
+  background: transparent;
+  border-radius: 35px;
+  margin: 17px;
+  color: #7B8089;
+  height: 40px;
+  line-height: 25px;
+}
+
+.wrapper main header .user-type{
+float: right;
+  padding: 7px 20px;
+  background:#fff ;
+  border-radius: 35px;
+  margin: 15px 0;
+  color: #7B8089;
+  height: 40px;
+  line-height: 25px;
+  border-color:#3e9be8;
+}
+.wrapper main header .user-type:hover{
+background:#3e9be8;
+color:#fff;
+}
+.wrapper main .content {
+  padding: 0px 40px;
+  float: left;
+  width: 100%;
+  position:relative;
+  color:#53565b;
+}
+.wrapper main .content h1 {
+  font-size: 24px;
+  margin-top: 35px;
+  margin-bottom: 24px;
+  color:#53565b;
+}
+
+
+.wrapper main .content .input-group {
+  width: 40%;
+  min-width: 430px;
+  z-index: 0;
+}
+
+
+.wrapper main .content .input-group input {
+  height: 48px;
+  box-shadow: none;
+}
+.wrapper main .content .input-group .input-group-addon {
+  padding: 5px 20px;
+  background-color: #70eaa3;
+  border: 1px solid #70eaa3;
+  font-size: 18px;
+  color: #fff;
+}
+.wrapper main .content .form-group {
+  /*loat: left;*/
+  /*width: 430px;*/
+}
+.wrapper main .content .btn-green {
+  float: right;
+  padding: 12px 25px;
+  color: #fff;
+  font-weight: bold;
+  background: #70eaa3;
+  border: 1px solid #70eaa3;
+  text-transform: uppercase;
+  min-width: 115px;
+}
+.wrapper main .content .table {
+  border: 1px solid rgba(185,189,197,0.30);
+}
+.wrapper main .content .table > thead > tr > th,
+.wrapper main .content .table > tbody > tr > td {
+  padding: 25px 15px;
+  border: none;
+  vertical-align:top;
+}
+.wrapper main .content span.status {
+    width: 10px;
+    height: 10px;
+    float: none;
+    border-radius: 100%;
+    display: inline-block;
+}
+.wrapper main .content span.status.active {
+  background: #70eaa3;
+  margin-right: 10px;
+}
+.wrapper main .content span.status.inactive {
+  background: #ff7c7b;
+  margin-right: 10px;
+}
+.wrapper main .content span.status.pending {
+  background: #ffd200;
+  margin-right: 10px;
+}
+.wrapper main .content .pagination > li > a,
+.wrapper main .content .pagination > li > span {
+  color: #333;
+  border: 0px;
+  font-size: 16px;
+}
+.wrapper main .content .pagination > li:last-child > a,
+.wrapper main .content .pagination > li:first-child > a {
+  color: #ccc;
+  font-size: 12px;
+  line-height: 22px;
+}
+
+.wrapper main .content .table{
+  font-size: 15px;
+  color: #53565B;
+}
+
+.wrapper .content .table .glyphicon{
+  display: table-cell;
+}
+.wrapper .content .table ul.dropdown-menu span.glyphicon {
+    display: inline-block;
+	margin-right: 20px;
+}
+.table-header{
+  background:#F5F5F5;
+  border-color:#979797;
+  /*box-shadow: 0px 2px 4px rgba(0,0,0,0.5);*/
+}
+.table a{
+  text-decoration: none;
+  color: #000;
+}
+.dropdown-menu{
+  top:0px;
+  left:auto;
+  right: 0px;
+}
+.wrapper .content .table{
+color:#53565B;
+}
+.wrapper .content .result-dropdown{
+  float: left;
+  padding-left: 10px;
+}
+.wrapper .content .result-dropdown .btn{
+  height: 48px;
+  min-width: 168px;
+}
+.wrapper .content .result-dropdown .btn .caret{
+margin-left: 10px;
+}
+
+.dropdown-menu.dropdown-menu-mod{
+  top:45px;
+}
+.open > .dropdown-toggle.btn-default, .open > .dropdown-toggle.btn-default:hover, .dropdown-toggle.btn-default:focus{
+  background-color: #fff;
+}
+
+
+.ReactModal__Overlay .ReactModal__Overlay--after-open {
+
+}
+.vertical-alignment-helper {
+    display:table;
+    height: 100%;
+    width: 100%;
+}
+.vertical-align-center {
+    /* To center vertically */
+    display: table-cell;
+    vertical-align: middle;
+}
+.vertical-alignment-helper .modal-content {
+    /* Bootstrap sets the size of the modal in the modal-dialog class, we need to inherit it */
+    width:530px;
+    height:auto;
+    box-shadow:0px 0px 2px 0px rgba(0,0,0,0.12), 0px 2px 102px 0px rgba(0,0,0,0.24);
+    border-radius:2px;
+
+    /* To center horizontally */
+    margin: 0 auto;
+}
+.wrapper .content .table .asset-group-delete .glyphicon{
+  display: inline-block;
+  padding-left: 15px;
+   cursor: pointer;
+}
+.wrapper .content .table .asset-group-delete .view-link{
+  color: #419CE8;
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 14px;
+}
+.vertical-alignment-helper .modal-content .modal-popup-title{
+  font-weight: bold;
+}
+.vertical-alignment-helper .modal-content .modal-search-content{
+  height: 200px;
+  border:1px solid #ccc;
+  border-radius: 5px;
+}
+.vertical-alignment-helper .modal-content .search-content{
+  width:97%;
+  border-bottom: 1px solid #ccc;
+  margin: 0px 5px;
+}
+.vertical-alignment-helper .modal-content .search-content-input{
+    height: 50px;
+    width:85%;
+    border: none;
+    padding: 0 5px;
+}
+.vertical-alignment-helper .modal-content .search-content:focus{
+    border-bottom: 2px solid #3e9be8;
+}
+
+.vertical-alignment-helper .modal-content .search-content-input:focus{
+    outline: none;
+    border-bottom: 2px solid #3e9be8;
+}
+.vertical-alignment-helper .modal-content .icon-container{
+  display: inline;
+}
+.vertical-alignment-helper .modal-content .input-group-addon{
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  background-color:#3d9ae7;
+  color:#fff;
+}
+
+.vertical-alignment-helper .modal-content .search-container{
+  height: calc(100% - 50px);
+  overflow-y:auto;
+}
+.vertical-alignment-helper .modal-content .empty-state{
+    text-align: center;
+    padding-top: 50px;
+    color: #C7CAD1;
+    font-size: 14px;
+}
+.vertical-alignment-helper .modal-content .search-container .all-asset-data-row{
+  height: 40px;
+  background-color: #F5F5F5;
+  line-height: 37px;
+  padding: 0px 10px;
+}
+.vertical-alignment-helper .modal-content .search-container .asset-data-row{
+  height: 40px;
+  line-height: 37px;
+  padding: 0px 10px;
+}
+
+.vertical-alignment-helper .modal-content .search-container .all-asset-data-row input[type="checkbox"], .vertical-alignment-helper .modal-content .search-container .asset-data-row input[type="checkbox"]{
+  padding-left: 10px;
+  height: 15px;
+  width: 15px;
+  margin-top: 10px;
+}
+.vertical-alignment-helper .modal-content .search-container .all-asset-data-row .checkbox-text, .vertical-alignment-helper .modal-content .search-container .asset-data-row .checkbox-text{
+  padding-left: 10px;
+  font-size: 14px;
+}
+.vertical-alignment-helper .modal-asset-content{
+  height: 322px;
+}
+.vertical-alignment-helper .modal-header{
+  text-align: center;
+  background: #f5f5f5;
+  padding: 27px;
+  text-transform:uppercase;
+}
+.modal-form .no-outline{
+  background-color: transparent;;
+ border: none;
+ border-bottom: 2px black solid;
+}
+.btn-group.open .dropdown-toggle
+{
+  box-shadow: none;
+}
+.wrapper .login-main .form-group {
+  position: relative;
+  margin-bottom: 30px;
+}
+.wrapper .login-main .form-group .forgot-text {
+  position: absolute;
+  right: 5px;
+  top: 10px;
+  color: #3e9be8;
+  font-size: 12px;
+  cursor: pointer;
+}
+.wrapper .login-main .form-group .form-control {
+  border: none;
+  box-shadow: none;
+  border-bottom: 1px solid #ccc;
+  border-radius: 0;
+  padding-left: 1px;
+}
+
+
+
+.modal .modal-body .form-group {
+  position: relative;
+  margin-bottom: 30px;
+}
+.modal .modal-body .form-group .forgot-text {
+  position: absolute;
+  right: 5px;
+  top: 10px;
+  color: #3e9be8;
+  font-size: 12px;
+  cursor: pointer;
+}
+.modal .modal-body .form-group .form-control {
+  border: none;
+  box-shadow: none;
+  border-bottom: 1px solid #ccc;
+  border-radius: 0;
+  padding-left: 1px;
+  color:#53565b;
+}
+.modal .modal-body .form-group .form-control:focus{
+ border-bottom: 2px solid #3e9be8;
+}
+.modal .modal-body .modal-data{
+  padding: 20px 20px 0 20px;
+  margin: 0px 15%;
+}
+.modal .modal-footer .btn-green {
+	padding: 12px 25px;
+	color: #fff;
+	font-weight: bold;
+	background: #70eaa3;
+	border: 1px solid #70eaa3;
+	font-size: 16px;
+	text-transform: uppercase;
+	min-width:115px;
+}
+.modal .modal-footer .btn-cancel{
+  padding: 12px 25px;
+  color: #ABABAB;
+  font-weight: bold;
+  background: #fff;
+  font-size: 16px;
+  min-width: 115px;
+  text-transform: uppercase;
+}
+
+.modal .modal-footer .btn-ok{
+  padding: 12px 25px;
+  color: #fff;
+  font-weight: bold;
+  background: #7AD7FF;
+  font-size: 16px;
+  min-width: 115px;
+  text-transform: uppercase;
+}
+
+.modal .modal-footer .btn-delete{
+ border-color: #EA7070;
+ padding: 12px 25px;
+ background: #EA7070;
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+  text-transform: uppercase;
+  min-width: 115px;
+
+}
+.modal .floating-label{
+  color: #53565B;
+}
+
+
+.modal .modal-footer{
+  border:none;
+  text-align: center;
+  padding: 15px;
+}
+
+.modal .modal-body .modal-asset-data{
+  margin-top: 10px;
+}
+.modal .modal-body .margin-formGroup{
+  margin-bottom: 10px;
+}
+.modal .close{
+  width: 30px;
+  height: 30px;
+  background: #fff;
+  border-radius: 25px;
+  font-weight: 300;
+  opacity: 1;
+}
+
+.dropdown-menu > li > a {
+    padding: 10px 20px;
+}
+
+.dropdown-menu .divider{
+ margin:0;
+}
+.wrapper main .content .table > tbody > tr > td:last-child
+{
+	width:60px;
+}
+.wrapper main .content .asset-type-table > tbody > tr > td:last-child
+{
+	width:600px;
+}
+.wrapper main .content .zone-table > tbody > tr > td:first-child
+{
+	width:900px;
+}
+.wrapper main .content .asset-group-table> tbody > tr > td:nth-child(3)
+{
+	width: 0px;
+}
+.wrapper main .content .table th span.glyphicon {
+    display: inline-block;
+    font-size: 10px;
+    padding-left: 10px;
+}
+.btn-view {
+    color: #337ab7;
+}
+.wrapper main .modal .modal-body .modal-data {
+    padding: 20px 0px 20px 0px;
+}
+.modal .modal-body .modal-data p.message{
+  font-size: 16px;
+}
+.modal .modal-footer {
+    border: none;
+    text-align: center;
+}
+
+.addreader .vertical-alignment-helper .modal-content {
+    width: 530px;
+    height: auto;
+    margin: 0 auto;
+    background:#ffffff;
+
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+.wrapper main .content .form-group{
+  float: left;
+  width: 300px;
+}
+}
+
+
+/* new css */
+.menu {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 2px 0px 2px 50px;
+}
+
+.navbar-login
+{
+    width: 305px;
+    padding: 10px;
+    padding-bottom: 0px;
+}
+
+.navbar-login-session
+{
+    padding: 10px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+
+.icon-size
+{
+    font-size: 50px;
+}
+
+.text-left{
+    padding : 5px;
+}
+
+.middle-bar {
+    margin-bottom : 35px;
+}
+
